@@ -1,0 +1,5 @@
+server:
+  port: 8000
+sprint:
+  application:
+    name: user-api
