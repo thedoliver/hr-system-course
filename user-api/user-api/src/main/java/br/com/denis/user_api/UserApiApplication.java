@@ -6,10 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
 
 import java.util.List;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class UserApiApplication implements CommandLineRunner {
 
 	@Autowired
@@ -23,7 +26,7 @@ public class UserApiApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception{
 		userRepository.saveAll(List.of(
 				new User(null, "Denis Machado", "denis@machado.com", "123", 20.0),
-				new User(null, "Denis Machado", "denis@machado.com", "123", 20.0)
+				new User(null, "Jari Maenpaa", "Jari@machado.com", "123", 30.0)
 		));
 	}
 

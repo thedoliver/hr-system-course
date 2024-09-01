@@ -2,7 +2,6 @@ package br.com.denis.user_api.resources;
 
 import br.com.denis.user_api.domain.User;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
